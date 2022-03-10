@@ -1,0 +1,37 @@
+@use 'base/variables' as v;
+
+h1, h2, h3 {
+    margin: 0;
+    line-height: 1.2;
+
+}
+h1, h2 {
+    font-weight: 400;
+}
+h1 {
+    font-size: 4.4rem;
+}
+h2 {
+    font-size: 3.4rem;
+    font-family: 'Dosis', sans-serif;
+}
+h3 {
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+[class$="heading"] {
+    margin: 1rem 0;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: v.$segundo;
+}
+a {
+    text-decoration: none;
+    color: v.$segundo
+}
+p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: v.$segundo;
+}

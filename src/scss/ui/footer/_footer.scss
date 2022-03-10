@@ -1,0 +1,12 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    &__redes{
+        display: flex;
+        gap: 1rem;
+    }
+}
+.copy{
+    background-color: #1c1d21;
+}

@@ -1,0 +1,10 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.blogpost{
+    padding: 2rem 0;
+    &__date{
+        align-items: center;
+        gap: 3rem;
+    }
+}

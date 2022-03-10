@@ -1,0 +1,65 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.banner{
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    align-items: center;
+    position: relative;
+    &::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   }
+}
+
+.blog{
+    background-image: url(../img/blogsingle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    align-items: center;
+    position: relative;
+    &::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   }
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.home{
+    &__content{
+        position: relative;
+        padding-top: 7rem;
+    }
+    &__heading{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    &__especial{
+        font-size: 10rem;
+        font-weight: 900;
+    }
+    &__boton{
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+}
+.active{
+    color: v.$segundo;
+}

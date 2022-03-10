@@ -1,0 +1,109 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+//story
+.story{
+    &__imagen{
+        position: relative;
+    }
+    &__img{
+        border-radius: 1.5rem;
+    }
+    &__link{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: calc(50% - .4rem);
+    }
+    &__icon{
+        width: 40rem; 
+    }
+}
+
+
+//eat
+.eat{
+    background-color: v.$gris;
+    padding-top: 5rem;
+    &__img{
+        margin: 0 auto;
+    }
+    &__link{
+        font-weight: 600;
+        font-size: 2rem;
+    }
+}
+
+//quality
+
+.quality{
+    margin-top: 3rem;
+    &__imagen{
+        display: flex;
+        justify-content: center;
+    }
+    &__heading{
+        font-size: 2.6rem;
+        color: v.$segundo;
+    }
+}
+
+//call
+.attachment{
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    align-items: center;
+    position: relative;
+    &::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+    &__contenido{
+        position: relative;
+    }
+    &__heading{
+        font-size: 4rem;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+    &__boton{
+        font-size: 1.8rem;
+    }
+    &__card{
+        color: v.$blanco;
+    }
+}
+
+
+//reasons
+.reason{
+    background-color: v.$gris;
+    margin: 5rem 0;
+    &__heading{
+        font-size: 2.6rem;
+        font-weight: 600;
+    }
+}
+
+//download
+.download{
+    &__boton{
+        @include m.grid(2, 2rem);
+    }
+}
+.get{
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+  
+                        
+                        
+                    

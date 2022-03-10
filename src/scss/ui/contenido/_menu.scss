@@ -1,0 +1,25 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.menu{
+    &__botones{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    &__content{
+        align-items: center;
+    }
+    &__item{
+        margin-bottom: 3rem;
+        &-name{
+            font-size: 2.2rem;
+            border-bottom: 1px dotted v.$segundo;
+            color: v.$segundo;
+        }
+        &-price{
+            color: v.$primario;
+            font-size: 3rem;
+        }
+    }
+}
