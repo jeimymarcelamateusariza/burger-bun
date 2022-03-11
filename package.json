@@ -1,12 +1,12 @@
 {
-  "name": "cafeteria",
+  "name": "burger",
   "version": "1.0.0",
-  "description": "Delivery App, BEM, SASS, Gulp, CSS Grid",
+  "description": "BEM, SASS, Gulp, CSS Grid",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jeimy Mateus",
+  "author": "Jeimy Marcela Mateus Ariza",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
@@ -24,10 +24,5 @@
   "browserslist": [
     "last 1 version",
     "> 1%"
-  ],
-  "dependencies": {
-    "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.8.1",
-    "icons": "^1.0.0"
-  }
+  ]
 }
